@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="gari_admin">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+  <title>gari_admin</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>>
+
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCt3O83_wna6h-vqk8Kqac58GzEfmv2njE",
+      authDomain: "gari-98f68.firebaseapp.com",
+      databaseURL: "https://gari-98f68.firebaseio.com",
+      projectId: "gari-98f68",
+      storageBucket: "gari-98f68.appspot.com",
+      messagingSenderId: "48712199725",
+      appId: "1:48712199725:web:12182d3a895f0291b692a4",
+      measurementId: "G-RC23C41FTW"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+  <script src="main.dart.js" type="application/javascript"></script>
+
+</body>
+
+</html>
